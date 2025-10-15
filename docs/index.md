@@ -1,74 +1,41 @@
-USRP X310 - Optical Integration
+Open Ireland Testbed
 
 
 
-# USRP X310 - Optical Integration
+# Open Ireland Testbed
 
-This tutorial provides an brief overview of the jfed USRP integration with the OpenIreland Optical Polatis Switch.
+OpenIreland - the reconfigurable 5G  and beyond radio, optical, and cloud testbed headquartered at Trinity College Dublin, provides virtualized 5G radio, optical transmission equipment, software virtualisation, Cloud-RAN, Network Functions Virtualisation (NFV), and Software Defined Networking (SDN) technologies (including OpenFlow and Netconf) to support the experimental investigation of the interplay between future networks and new radio. The testbed includes indoor and outdoor 5G new radio, cloud, and optical transmission equipment deployed within Trinity College Dublin, around the Dublin Docklands area, and out to the DCU Campus in North Dublin. ​​
 
-![](assets/usrp-x310-optical-integration/f8c3465925fb574dbbf9b1b642fe3bbb2516e6d2b23ce32984ec6fb89886712b)
+![](assets/open-ireland-testbed/e3ff36629a9241288fdbdd72a91cd23231b10f566e046a2bb6c8855375727665)
 
-RSEPC is as follows:
+Figure 1: Open Ireland Testbed
 
-```
-<?xml version='1.0'?>
-<rspec xmlns="http://www.geni.net/resources/rspec/3" type="request" generated_by="jFed RSpec Editor" generated="2022-12-16T10:47:35.550Z" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:jfedBonfire="http://jfed.iminds.be/rspec/ext/jfed-bonfire/1" xmlns:delay="http://www.protogeni.net/resources/rspec/ext/delay/1" xmlns:jfed-command="http://jfed.iminds.be/rspec/ext/jfed-command/1" xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:jfed-ssh-keys="http://jfed.iminds.be/rspec/ext/jfed-ssh-keys/1" xmlns:jfed="http://jfed.iminds.be/rspec/ext/jfed/1" xmlns:sharedvlan="http://www.protogeni.net/resources/rspec/ext/shared-vlan/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd ">
-  <node client_id="x310" exclusive="true" component_manager_id="urn:publicid:IDN+iris-open-testbed.connectcentre.ie+authority+am" component_id="urn:publicid:IDN+iris-open-testbed.connectcentre.ie+node+x310-10.55.42.0">
-    <sliver_type name="vm-m1.large.performance.x310.X710">
-      <disk_image name="urn:publicid:IDN+iris-open-testbed.connectcentre.ie+image+jammy"/>
-    </sliver_type>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="75.0" y="25.0"/>
-    <interface client_id="x310:ens3">
-      <ip address="provider3" type="ipv4"/>
-    </interface>
-  </node>
-  <node client_id="x310b" exclusive="true" component_manager_id="urn:publicid:IDN+iris-open-testbed.connectcentre.ie+authority+am" component_id="urn:publicid:IDN+iris-open-testbed.connectcentre.ie+node+x310-10.55.42.0">
-    <sliver_type name="vm-m1.large.performance.x310.X710">
-      <disk_image name="urn:publicid:IDN+iris-open-testbed.connectcentre.ie+image+jammy"/>
-    </sliver_type>
-    <location xmlns="http://jfed.iminds.be/rspec/ext/jfed/1" x="368.0" y="103.5"/>
-    <ip address="provider3" type="ipv4"/>
-  </node>
-</rspec>
-```
+Our facility pairs underlying flexible radio, reconfigurable optical access networks and computation resources with various hypervisors in the form of software defined radio (SDR) frameworks, virtualized network functions (VNFs), and SDN network slicing capabilities, running across a multi-tenant and multi-cloud OpenStack environments to realise various reconfigurable research and experimentation configurations. The testbed is principally based on open-source software including Openstack, Open Source MANO (OSM), Goldstone, OpenAirInterface 4G/5G and srsRAN (4G/5G) which are implemented over open interfaces (i.e., O-RAN, ODTN). OpenIreland is ideally equipped to support research towards the combination of SDR and radio slicing, SDN, network functions virtualisation, Quantum communication, and physical layer approaches into coexisting and coherent next-generation commercial networks, including but not limited to 5G. These activities, combined with experiment automation techniques based on unambiguous code, is supporting the evolution of the Iris testbed to support energy efficiency, data collection, and experiment reproducibility.
 
-Note, this particular experiment used the OpenStack flavour: `m1.large.performance.x310.X710`
+## Optical Infrastructure
 
-This flavour has 7 Dedicated CPUs running across 1 NUMA node, running at 3.8GHz clock, with 20GB RAM, with MEM\_PAGE\_SIZE of 2048
+The optical capabilities of the OpenIreland testbed include over 1,700 km of fibre spools, ROADMs, amplifiers, coherent transponders, optical signal and noise monitors, in addition to typical optical laboratory equipment, such as spectrum analyser, real-time scope, optical filters, etc. The testbed is also fully reconfigurable, through the use of a large port count optical fibre switch, which manages the topology for any experiment. This functionality is supported by an SDN control plane primarily using the Nefconf protocol. This gives experimenters the ability to reconfigure the network and experiment equipment. Experimenters can also monitor and collect power and ASE noise and OSNR from optical testbed equipment. An overview of the Optical testbed equipment and network topology is available in Figure 2.
 
-Execute the experiment
+![](assets/open-ireland-testbed/d09c27b94ba1af9a9bea8b4086a270e9ef4a630d10f8b368a07cd1988ad4365f)
 
-![](assets/usrp-x310-optical-integration/b2a23d6084c67fd9482335fb9bb0742fa65f8a4c4fcc09a525fb3431e62b14be)
+Figure 2: OpenIreland Software Defined Radio Equipment (USRPs), Optical Equipment, and Cloud Architecture
 
-The latest version of Ubuntu is used, downloaded nightly
+## Cloud and Network Function Virtualisation
 
-To view the USRPs run the following commands
+Optical and Wireless equipment are connected to a private computational cloud orchestrated primarily by the Canonical suite of technologies including MAAS (Metal as a Service), containers (Docker, LXD, LXC, Kubernetes), cloud platform (OpenStack), and operating systems (Ubuntu), enabling OpenIreland to easily build and deploy multiple isolated testbed environments supporting dynamic virtualised experiments.
 
-```
-sudo apt-get update
-sudo apt install net-tools -y
-sudo apt-get install libuhd-dev uhd-host -y
-```
+To support end-to-end experiment setup and reproducibility in a fully automated way, OpenIreland utilises the Open Source MANO framework, which is an ETSI-hosted project supporting the development of an Open Source NFV Management and Orchestration (MANO) software stack aligned with ETSI NFV. Based on this environment, optical and radio hypervisors combined with dynamic distributed network functions enable the realization of heterogeneous radio and optical platforms that can support malleable and adaptable network configurations.
 
-Benchmark test the USRP.
+![](assets/open-ireland-testbed/6375e4790f80456894bc5479af8f45d1794ac95215b84bcdee86a8ebf7982a76)
 
-```
-cd /usr/lib/uhd/examples
-./benchmark_rate --rx_rate 100e6 --tx_rate 100e6 --duration 30
-##You should see output as follows:
-Benchmark rate summary:
-Num received samples: 302084340
-Num dropped samples: 0
-Num overruns detected: 0
-Num transmitted samples: 308295260
-Num sequence errors (Tx): 0
-Num sequence errors (Rx): 0
-Num underruns detected: 0
-Num late commands: 0
-Num timeouts (Tx): 0
-Num timeouts (Rx): 0
-```
+Figure 3: Open Ireland Cloud Architecture
 
-For USRP - VM performance trips check out the following link. This might be necessary if the benchmark tests fail.
+## Radio Equipment and Resources
 
-<https://kb.ettus.com/USRP_Host_Performance_Tuning_Tips_and_Tricks>
+Radio resources include 24 NI USRP N210 ([USRP N210 Software Defined Radio (SDR) - Ettus Research](https://www.ettus.com/all-products/un210-kit/) ) ceiling mounted nodes (See Figure 1) equipped with SBX daugtherboards supporting frequency ranges of 400 MHz-4400 MHz offering up to 20 MHz of bandwidth. This equipment supports experimentation with Wi-Fi, WiMAX, S-band transceivers and 2.4 GHz ISM band transceivers, and so forth. We also employ 5 NI USRP X310s ([USRP X310 High Performance Software Defined Radio - Ettus Research](https://www.ettus.com/all-products/x310-kit/) ) supporting DC to 6 GHz frequencies and up to 100 MHz of baseband bandwidth. Additionally the testbed contains B210 USRPs ([USRP B210 USB Software Defined Radio (SDR) - Ettus Research](https://www.ettus.com/all-products/ub210-kit/) ), which provide a fully integrated two-channel USRP device with continuous RF coverage from 70 MHz – 6 GHz Full duplex, MIMO (2 Tx & 2 Rx) operation with up to 56 MHz of real-time bandwidth (61.44MS/s quadrature). All USRPs are connected to the optical and cloud components of the testbed network via optical cables. To expose the functionality of this USRP equipment for applications, we employ a variety of open source radio hypervisors that freely enable prototyping of wireless systems, as exemplified by GNURadio ([GitHub - gnuradio/gnuradio: GNU Radio – the Free and Open Software Radio Ecosystem](https://github.com/gnuradio/gnuradio) ), srsRAN 4G/5G ([GitHub - srsran/srsRAN: Open source SDR 4G/5G software suite from Software Radio Systems (SRS)](https://github.com/srsran/srsRAN) ), and Open-Air Interface 4G/5G ([OpenAirInterface Software Alliance](https://github.com/openairinterface) ). The abstract representation of the different layers of the testbed including Functional Elements (Hardware), Virtualisation Layer, etc., are represented in Figure 3.
+
+# OpenIreland Video Overview
+
+OpenIreland testbed Overview - SFI Summit 2021
+
+<https://www.youtube.com/watch?v=59dkYoqH-58>

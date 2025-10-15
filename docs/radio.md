@@ -1,0 +1,9 @@
+Radio
+
+
+
+# Radio
+
+## Radio Equipment and Resources
+
+Radio resources include 24 NI USRP N210 ([USRP N210 Software Defined Radio (SDR) - Ettus Research](https://www.ettus.com/all-products/un210-kit/) ) ceiling mounted nodes (See Figure 1) equipped with SBX daugtherboards supporting frequency ranges of 400 MHz-4400 MHz offering up to 20 MHz of bandwidth. This equipment supports experimentation with Wi-Fi, WiMAX, S-band transceivers and 2.4 GHz ISM band transceivers, and so forth. We also employ 5 NI USRP X310s ([USRP X310 High Performance Software Defined Radio - Ettus Research](https://www.ettus.com/all-products/x310-kit/) ) supporting DC to 6 GHz frequencies and up to 100 MHz of baseband bandwidth. Additionally the testbed contains B210 USRPs ([USRP B210 USB Software Defined Radio (SDR) - Ettus Research](https://www.ettus.com/all-products/ub210-kit/) ), which provide a fully integrated two-channel USRP device with continuous RF coverage from 70 MHz – 6 GHz Full duplex, MIMO (2 Tx & 2 Rx) operation with up to 56 MHz of real-time bandwidth (61.44MS/s quadrature). All USRPs are connected to the optical and cloud components of the testbed network via optical cables. To expose the functionality of this USRP equipment for applications, we employ a variety of open source radio hypervisors that freely enable prototyping of wireless systems, as exemplified by GNURadio ([GitHub - gnuradio/gnuradio: GNU Radio – the Free and Open Software Radio Ecosystem](https://github.com/gnuradio/gnuradio) ), srsRAN 4G/5G ([GitHub - srsran/srsRAN: Open source SDR 4G/5G software suite from Software Radio Systems (SRS)](https://github.com/srsran/srsRAN) ), and Open-Air Interface 4G/5G ([OpenAirInterface Software Alliance](https://github.com/openairinterface) ). The abstract representation of the different layers of the testbed including Functional Elements (Hardware), Virtualisation Layer, etc., are represented in Figure 3.

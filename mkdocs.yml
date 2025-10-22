@@ -11,7 +11,7 @@ theme:
     - scheme: slate                        # dark
       primary: indigo
       accent: blue
-      toggle:mkdocs serve
+      toggle:
         icon: material/weather-night
         name: Switch to dark mode
 

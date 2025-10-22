@@ -2,4 +2,7 @@ site_name: Wiki
 theme:
   name: material
 nav:
-  []
+  - Home: index.md
+  - Tutorials:
+      - tutorials/index.md
+      - First Experiment - Simple Cloud VM: cloud/first-experiment-simple-cloud-vm.md

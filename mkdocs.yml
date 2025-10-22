@@ -4,5 +4,10 @@ theme:
 nav:
   - Home: index.md
   - Tutorials:
-      - tutorials/index.md
-      - First Experiment - Simple Cloud VM: cloud/first-experiment-simple-cloud-vm.md
+      - Welcome to Tutorials: tutorials/index.md
+      - First Experiment — Simple Cloud VM: tutorials/first-experiment-simple-cloud-vm.md
+      - FreeRouter — Tutorial 1: tutorials/freerouter-tutorial-1.md
+      - FreeRTR — Tutorial 2: tutorials/freertr-tutorial-2.md
+      - FreeRTR — Unleashed: tutorials/freertr-unleashed.md
+      - N210 USRPs — Example Experiment: tutorials/n210-usrps-example-experiment.md
+      - USRP X310 — Optical Integration: tutorials/usrp-x310-optical-integration.md

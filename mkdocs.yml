@@ -4,10 +4,6 @@ theme:
   name: material
   logo: images/logo.svg                    # put under docs/images/
   favicon: images/favicon.png              # 32×32 or 48×48
-  features:
-    - navigation.sections
-    - navigation.expand
-    - content.code.copy
   palette:
     - scheme: default                      # light
       primary: indigo
@@ -22,7 +18,7 @@ theme:
 extra:
   social:
     - icon: material/github
-      link: https://github.com/open-ireland-testbed/wiki
+      link: https://github.com/open-ireland-testbed/
 
 repo_url: https://github.com/open-ireland-testbed/wiki
 edit_uri: ""                               # hide “Edit on GitHub” (optional)

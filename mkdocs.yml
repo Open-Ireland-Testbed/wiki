@@ -2,8 +2,8 @@ site_name: Open Ireland Testbed
 site_url: https://open-ireland-testbed.github.io/wiki/
 theme:
   name: material
-  logo: images/logo.svg                    # put under docs/images/
-  favicon: images/favicon.png              # 32×32 or 48×48
+  logo: # images/logo.svg                    # under docs/images/
+  favicon: # images/favicon.png              # 32×32 or 48×48
   palette:
     - scheme: default                      # light
       primary: indigo
@@ -20,8 +20,8 @@ extra:
     - icon: material/github
       link: https://github.com/open-ireland-testbed/
 
-repo_url: https://github.com/open-ireland-testbed/wiki
+repo_url: https://github.com/open-ireland-testbed/
 edit_uri: ""                               # hide “Edit on GitHub” (optional)
-copyright: "© 2025 Open Ireland Testbed"
+copyright: "2025 Open Ireland Testbed"
 nav:
   []

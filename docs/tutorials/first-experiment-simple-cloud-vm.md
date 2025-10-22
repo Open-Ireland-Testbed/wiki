@@ -38,11 +38,11 @@ Open the jFed framework. Create a new experiment and add the following RSPEC fil
 
 The RSPEC editor should look like the following.
 
-![](assets/first-experiment-simple-cloud-vm/ac133258fb86feefc181e8864182a39af6b52a506d12169f112de7ba3563dd99)
+![RSPEC editor](../assets/first_exp_01.png)
 
 Press “Run”
 
-![](assets/first-experiment-simple-cloud-vm/16b2b76389e3076613980fe5d8d723e553df753d77d9102e78f760f96749e7b5)
+![RSPEC editor - RUN](../assets/first_exp_02.png)
 
 Enter Experiment “**Name**”: ***testexp1***
 
@@ -52,13 +52,13 @@ Accept: “Terms & Conditions“
 
 Press “**Start Experiment**”
 
-![](assets/first-experiment-simple-cloud-vm/68f2c79602ecb47bb398794973cfd4a820e2665c545925d824e7765b5ec77a64)
+![RSPEC editor - Start Experiment](../assets/first_exp_03.png)
 
 It will take several minutes for the experiment to create
 
 When the VM Icon goes Green its possible to SSH to the VM
 
-![](assets/first-experiment-simple-cloud-vm/b18e6a8e464b84fdefb8441461769da6fb0707c249595c43096e81fe97daa704)
+![RSPEC editor - SSH to VM](../assets/first_exp_04.png)
 
 At this point you can begin installing whatever tools required to for your experiment.
 
@@ -69,7 +69,7 @@ sudo apt-get update
 #sudo apt-get install iperf3
 ```
 
-![](assets/first-experiment-simple-cloud-vm/910fa57f5350eec0ce995009ea8d7889de918fc4e17d546243dd72f424975a15)
+![Install Tools](../assets/first_exp_05.png)
 
 # Extra Information - more advanced Experiment with Radios and OFDM
 

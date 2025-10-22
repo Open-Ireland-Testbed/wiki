@@ -36,7 +36,7 @@ Load the following rspec, with connected Seeeduino LoRaWAN Board with ubuntu (<h
 
 # 6. Jfed
 
-![](assets/openireland-lorawan-tutorial/52c446785741c4cddb45d3e86a7b03485ba9180197c1807152c3f42941ebe15e)
+![Image](../assets/iot_01.png)
 
 Make sure that Seeeduino board is connected to the VM at Iris, by running the following command. *dmesg | grepSeeed* - and if the board is there you should see the following information.
 
@@ -69,11 +69,11 @@ Open the pn\_seeed.ino file
 
 Compile the file - using the "Verify" button
 
-![](assets/openireland-lorawan-tutorial/ee7037081e2fc6d763a607fbd8bd9b7729fcfa16bc938379695a0638cd47c38e)
+![Image](../assets/iot_02.png)
 
 Use the "**Upload"** button to push the code to the board.
 
-![](assets/openireland-lorawan-tutorial/c160545363e6c31364a2ac843df1f3283dfcb408ac355a13dc0f039f9162dc2b)
+![Image](../assets/iot_03.png)
 
 Note, you can see debug information from the Serial Monitor
 
@@ -85,7 +85,7 @@ Open your Arudino IDE, click on **File > Preferences**, and copy below url to *
 https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 ```
 
-![](assets/openireland-lorawan-tutorial/c269796ea8daaeb66b397d6698ca5daa43fa174373ee70f8483332134c3a84a9)
+![Image](../assets/iot_04.png)
 
 # 9. Install a board manager
 
@@ -93,7 +93,7 @@ Click on **Toos > Board > Board Manager**.
 
 Now you can search the board by name "Seeduino" and install Seed SAMD Boards
 
-![](assets/openireland-lorawan-tutorial/94a38c58813c07fc62c455a75af1a41b1ecca51b84273849d348c02a65438d51)
+![Image](../assets/iot_05.png)
 
 # 10. Set a board
 
@@ -101,11 +101,11 @@ After Step 3 was successful, a board named SeeeduinoLoraWan will show up at the 
 
 Click on **Tools > Board**, ***SeeeduinoLoraWan > Seeed SAMD (32-Bits ARM cortex - MO+ and Cortex-M4)Boards > Seeeduino LoRaWAN*** is available now. You may need to click this to activate it.
 
-![](assets/openireland-lorawan-tutorial/306afe7b1eacc87f02ab22a81dfd9f6079a18644ee5b4a3b5fba999136a078c3)
+![Image](../assets/iot_06.png)
 
 When the LoRaWAN Seeeduino USB device is attached to the machine, its visible in the following screenshot. Youcan now load code to the board to support LoRaWAN seeeduino communication.
 
-![](assets/openireland-lorawan-tutorial/9ee8fb30dd0bdcf9c4ba023b02399f6de94d06b47210a270b453111bd9b3775d)
+![Image](../assets/iot_07.png)
 
 Note, if you cannot see the board in Arduino try the following command
 
@@ -132,11 +132,11 @@ Download the PN LoRaWAN Code from GitHub, and use the "Upload" button to upload 
 
 Enable debug
 
-![](assets/openireland-lorawan-tutorial/0da1595d2c4dfd7b2504961d40e2f7940a3d3447e8cbdc0f43f46043b45b9617)
+![Image](../assets/iot_08.png)
 
 Enable debug and view the console output.
 
-![](assets/openireland-lorawan-tutorial/92ae6eedfcaaed553a9d976813690aa2fe4b307cfb625adef66f9bff279af3ba)
+![Image](../assets/iot_09.png)
 
 # Troubleshooting
 

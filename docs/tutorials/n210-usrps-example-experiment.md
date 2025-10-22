@@ -21,7 +21,7 @@ This is an example experiment for instantiating N210 USRPs supported by the Open
 </rspec>
 ```
 
-![](assets/n210-usrps-example-experiment/d90385d933aed626ebbb015feafa770616766c2aeba7541c8b7a60e61c542e17)
+![Image](../assets/n210_01.png)
 
 Run the Experiment
 

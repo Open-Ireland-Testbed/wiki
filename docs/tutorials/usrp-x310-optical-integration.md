@@ -6,7 +6,7 @@ USRP X310 - Optical Integration
 
 This tutorial provides an brief overview of the jfed USRP integration with the OpenIreland Optical Polatis Switch.
 
-![](assets/usrp-x310-optical-integration/f8c3465925fb574dbbf9b1b642fe3bbb2516e6d2b23ce32984ec6fb89886712b)
+![Image](../assets/usrp_01.png)
 
 RSEPC is as follows:
 
@@ -38,7 +38,7 @@ This flavour has 7 Dedicated CPUs running across 1 NUMA node, running at 3.8GHz 
 
 Execute the experiment
 
-![](assets/usrp-x310-optical-integration/b2a23d6084c67fd9482335fb9bb0742fa65f8a4c4fcc09a525fb3431e62b14be)
+![Image](../assets/usrp_02.png)
 
 The latest version of Ubuntu is used, downloaded nightly
 

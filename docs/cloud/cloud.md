@@ -10,6 +10,6 @@ Optical and Wireless equipment are connected to a private computational cloud or
 
 To support end-to-end experiment setup and reproducibility in a fully automated way, OpenIreland utilises the Open Source MANO framework, which is an ETSI-hosted project supporting the development of an Open Source NFV Management and Orchestration (MANO) software stack aligned with ETSI NFV. Based on this environment, optical and radio hypervisors combined with dynamic distributed network functions enable the realization of heterogeneous radio and optical platforms that can support malleable and adaptable network configurations.
 
-![](assets/cloud/9b0ccf2e455fbaeed63bc18e05e755abdeb756cd928d5ad279fd3e683ff27e3b)
+![Image](../assets/cloud_01.png)
 
 Figure 3: Open Ireland Cloud Architecture

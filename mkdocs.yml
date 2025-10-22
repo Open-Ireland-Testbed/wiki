@@ -2,8 +2,8 @@ site_name: Open Ireland Testbed
 site_url: https://open-ireland-testbed.github.io/wiki/
 theme:
   name: material
-  logo: # images/logo.svg                    # under docs/images/
-  favicon: # images/favicon.png              # 32×32 or 48×48
+  logo: "" # images/logo.svg                    # under docs/images/
+  favicon: "" # images/favicon.png              # 32×32 or 48×48
   palette:
     - scheme: default                      # light
       primary: indigo
@@ -11,7 +11,7 @@ theme:
     - scheme: slate                        # dark
       primary: indigo
       accent: blue
-      toggle:
+      toggle:mkdocs serve
         icon: material/weather-night
         name: Switch to dark mode
 

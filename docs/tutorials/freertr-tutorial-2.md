@@ -18,7 +18,7 @@ In order to get started, we need to follow the same steps which are described in
 
 If you understand the diagram and get an idea of what we are going to do … then both the configuration and troubleshooting would be easy for you. Essentially 4 routers are connected with each other in a way where it looks like we’ve created a loop.
 
-![](assets/freertr-tutorial-2/5c79c7a40be61d8edc8411ee5e3ed82088b3d787b7b39e153906701a2110bbcf)
+![Image](../assets/free_rtr2_01.png)
 
 ## Router 1:
 
@@ -251,7 +251,10 @@ sudo java -jar rtr.jar routersc r4-hw.txt r4-sw.txt
 sh lldp nei
 ```
 
-![](assets/freertr-tutorial-2/88344a5d388284569605c964a5a5115549e91dfc386f8c22a8af47ccbe0a25c4)![](assets/freertr-tutorial-2/7348c5b0fc7ab1d47d4f3bc91f6c4502da1ee6411a956f774e16559f7f2a6532)![](assets/freertr-tutorial-2/16d11ed682fe680c988f69693f8421b7decbf4ab04022eba1f0301538b9ce8fc)![](assets/freertr-tutorial-2/c8a4aa8505efb9cd20683fffa0faa39579980b880fa546dcd2fd19b68ac118e1)
+![Image](../assets/free_rtr2_02.png)
+![Image](../assets/free_rtr2_03.png)
+![Image](../assets/free_rtr2_04.png)
+![Image](../assets/free_rtr2_05.png)
 
 Now, Ping each other
 

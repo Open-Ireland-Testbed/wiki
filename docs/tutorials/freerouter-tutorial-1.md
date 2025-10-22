@@ -41,7 +41,8 @@ Load the following jFed RSPEC File.
 
 Start Experiment. Enter “project”, Experiment “name“, Accept the Terms and Conditions and then you can set desired period to run the experiment and proceed.
 
-![](assets/freerouter-tutorial-1/7f9f0e1d785d199a2244aeedcd241a4ebef0a937a95e54993e342e6a251d2ae6)![](assets/freerouter-tutorial-1/62d43bfd2c118857e8d4d08e56c0ebff8a749fe3c70da851b8665575d6698571)
+![Start Project](../assets/free_rtr_01.png)
+![Image](../assets/free_rtr_02.png)
 
 It is also vital to ensure zero error while running the test. If the experiment runs successfully, you can now start installing FreeRtr on the local machine.
 
@@ -57,11 +58,11 @@ The freeRouter homepage is at <http://freertr.net> . Starting from this page, yo
 wget freertr.net/rtr.jar
 ```
 
-![](assets/freerouter-tutorial-1/cbe136bc27897847fd8744fe9c00f461d0100dbc70b768b5176a86cb6d0daa86)
+![Image](../assets/free_rtr_03.png)
 
 Open the ssh terminal by clicking the node for configuration.
 
-![](assets/freerouter-tutorial-1/970655031a4879aa4363be4dab033755a3914757e8aab349ab9bf8547c1d4eed)
+![Image](../assets/free_rtr_04.png)
 
 # Configuration
 
@@ -180,7 +181,7 @@ parameters:
 #java -jar <path>/rtr.jar routersc <path>/r1-hw.txt <path>/r1-sw.txt
 ```
 
-![](assets/freerouter-tutorial-1/144bf0da1903be54afeceb5b9b9c214735a8748b156f1a005f5434d8c1f813ed)
+![Image](../assets/free_rtr_05.png)
 
 **Let’s do this again in another terminal for router 2…**
 
@@ -245,7 +246,8 @@ r1#ping 1.1.1.2 /vrf v1
 r2#ping 1.1.1.1 /vrf v1
 ```
 
-![](assets/freerouter-tutorial-1/360c899376251b27a0454d3194ffb107e390da33c1166eb309f94eedc2bbfc0e)![](assets/freerouter-tutorial-1/91bf11ab4c7b2c83e186c61b5e213de1d9e50bc923272b02d0368fcce60d3430)
+![Image](../assets/free_rtr_06.png)
+![Image](../assets/free_rtr_07.png)
 
 Congratulations! You have accomplished this experiment using native UNIX UDP socket forwarding! Let’s go to the next tutorial .
 

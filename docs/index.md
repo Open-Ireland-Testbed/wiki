@@ -6,7 +6,7 @@ Open Ireland Testbed
 
 OpenIreland - the reconfigurable 5G  and beyond radio, optical, and cloud testbed headquartered at Trinity College Dublin, provides virtualized 5G radio, optical transmission equipment, software virtualisation, Cloud-RAN, Network Functions Virtualisation (NFV), and Software Defined Networking (SDN) technologies (including OpenFlow and Netconf) to support the experimental investigation of the interplay between future networks and new radio. The testbed includes indoor and outdoor 5G new radio, cloud, and optical transmission equipment deployed within Trinity College Dublin, around the Dublin Docklands area, and out to the DCU Campus in North Dublin. ​​
 
-![](assets/open-ireland-testbed/e3ff36629a9241288fdbdd72a91cd23231b10f566e046a2bb6c8855375727665)
+![Image](assets/index_01.png)
 
 Figure 1: Open Ireland Testbed
 
@@ -16,7 +16,7 @@ Our facility pairs underlying flexible radio, reconfigurable optical access netw
 
 The optical capabilities of the OpenIreland testbed include over 1,700 km of fibre spools, ROADMs, amplifiers, coherent transponders, optical signal and noise monitors, in addition to typical optical laboratory equipment, such as spectrum analyser, real-time scope, optical filters, etc. The testbed is also fully reconfigurable, through the use of a large port count optical fibre switch, which manages the topology for any experiment. This functionality is supported by an SDN control plane primarily using the Nefconf protocol. This gives experimenters the ability to reconfigure the network and experiment equipment. Experimenters can also monitor and collect power and ASE noise and OSNR from optical testbed equipment. An overview of the Optical testbed equipment and network topology is available in Figure 2.
 
-![](assets/open-ireland-testbed/d09c27b94ba1af9a9bea8b4086a270e9ef4a630d10f8b368a07cd1988ad4365f)
+![Image](assets/index_02.png)
 
 Figure 2: OpenIreland Software Defined Radio Equipment (USRPs), Optical Equipment, and Cloud Architecture
 
@@ -26,7 +26,7 @@ Optical and Wireless equipment are connected to a private computational cloud or
 
 To support end-to-end experiment setup and reproducibility in a fully automated way, OpenIreland utilises the Open Source MANO framework, which is an ETSI-hosted project supporting the development of an Open Source NFV Management and Orchestration (MANO) software stack aligned with ETSI NFV. Based on this environment, optical and radio hypervisors combined with dynamic distributed network functions enable the realization of heterogeneous radio and optical platforms that can support malleable and adaptable network configurations.
 
-![](assets/open-ireland-testbed/6375e4790f80456894bc5479af8f45d1794ac95215b84bcdee86a8ebf7982a76)
+![Image](assets/index_03.png)
 
 Figure 3: Open Ireland Cloud Architecture
 

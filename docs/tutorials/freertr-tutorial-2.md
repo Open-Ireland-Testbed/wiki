@@ -12,7 +12,7 @@ In the previous tutorial we worked on a simple example where we implemented two 
 
 # Let’s get started!
 
-In order to get started, we need to follow the same steps which are described in the previous tutorial. Such as connecting jFed and installing freeRtR while going forward to configure files. Let’s skip the initial setup part as we already have done it. In case you haven’t completed the first tutorial, feel free to go back following this link, and start from scratch! ![(big grin)](assets/freertr-tutorial-2/a1b6031110b91ed56ae49dadadf83c3fcac121c5e30345a048d1d61136d5dce6)
+In order to get started, we need to follow the same steps which are described in the previous tutorial. Such as connecting jFed and installing freeRtR while going forward to configure files. Let’s skip the initial setup part as we already have done it. In case you haven’t completed the first tutorial, feel free to go back following this link, and start from scratch! ![(big grin)]
 
 # Wait, understand the Diagram first before configuration!
 
